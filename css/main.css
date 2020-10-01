@@ -1,0 +1,100 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*ОБЩИЙ КОНТЕЙНЕР*/
+.container {
+  max-width: 2640px;
+  margin: 0 auto;
+	padding: 0;
+}
+
+
+.modal-header {
+  border-bottom: 2px solid #a2a3a4 !important;
+}
+
+.modal-title {
+  text-transform: uppercase;
+  font-size: calc(30px + 30* (100vw / 2640));
+}
+.modal-body__account {
+  border-bottom: 2px solid #a2a3a4;
+  padding-bottom: 50px;
+}
+.modal-body__title {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: calc(20px + 20* (100vw / 2640));;
+}
+.modal-body__check {
+  padding-top: 1rem;
+}
+.modal-content {
+  background-color: #f6f8fa !important;
+  border-radius: 0 !important;
+  padding: 50px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  height: 68px !important;
+}
+
+.form-check-label {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  margin-bottom: 25px !important;
+}
+
+/*стилизация чекбокса*/
+.form-check-input {
+  display: none;
+}
+.form-check__decor {
+  display: block;
+  width: 100%;
+  height: 108px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  color: #cacaca;
+  position: relative;
+}
+.form-check__decor span {
+  color: #00c05a;
+  font-size: calc(12px + 20 * (100vw / 2640));
+}
+.form-check__decor::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 108px;
+  color: #00c05a !important;
+  background: #d5f0e1;
+  opacity: 0;
+  transition: .4s;
+}
+.form-check-input:checked + .form-check__decor::before {
+  opacity: 1;
+}
+
+.form-check {
+  padding: 0 !important;
+  margin-bottom: 25px;
+}
+
+.modal-footer {
+  border-top: 2px solid #a2a3a4 !important;
+}
+.btn-primary {
+  background-color: white !important;
+  border: 2px solid #00c05a !important;
+  color: #00c05a !important;
+}
+.size {
+  padding-right: 25px !important;
+}
